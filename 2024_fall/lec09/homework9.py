@@ -1,4 +1,4 @@
-import numpy as np
+mport numpy as np
 
 def fourier_synthesis(num_harmonics, X, T0):
     '''
@@ -16,5 +16,9 @@ def fourier_synthesis(num_harmonics, X, T0):
     
     x[n] = (2/N) * sum_{l=1}^{num_harmonics} |X[l*N//T0]| * cos(2*pi*l*n/T0 + angle(X[l*N//T0]))
     '''
-    raise RuntimeError("You need to change this part")
-
+    N =len(x)
+    x =np.zeros(N)
+    for l in range（1,num_harmonics+1):
+    for n in range(N):
+    x[n] += (2/N) * np.abs(x[l*N//T0]| * np.cos(2*np.pi*l*N/T0 + np.angle(X[l*N//T0]))
+                           retuen(x)
